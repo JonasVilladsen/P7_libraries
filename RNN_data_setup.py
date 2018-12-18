@@ -552,5 +552,3 @@ class setup(gm):
                 muni_str = self.muni_info.loc[muni]['KOMMUNENAVN']
                 s += '    - %s\n' %muni_str
         return(s)
-        
-        

@@ -1,4 +1,4 @@
-This Github repository includes software developed by e18mattek7a through out the 6th and 7th semester of MatTek. The repository includes the following modules
+This Github repository includes software developed by the group e18mattek7a throughout the 6th and 7th semester of the Mathematical Engineering education at Aalborg University. The repository includes the following modules:
 
 LSTM_model.py
 RNN_data_setup.py
@@ -13,4 +13,4 @@ rad_model.py
 sanity_checks.py
 utilities.py
 
-However since the data aren't public available are the scripts only for viewing purposes.
+However, since the data are not publicly available these scripts are only for viewing purposes.

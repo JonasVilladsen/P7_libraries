@@ -5,12 +5,6 @@ Created on Sun Sep 16 16:09:48 2018
 @author: Tobias
 """
 
-# -*- coding: utf-8 -*-
-"""
-Created on Tue Sep 11 11:29:09 2018
-
-@author: Tobias
-"""
 import import_SPP
 import pandas as pd
 import numpy as np
@@ -258,4 +252,3 @@ class ARX(gm):
             return(P_ARX_fc_df,
                    SPP_test.SPP[t_start:t_end],
                    P_X_test[t_start:t_end],P_AR)
-        

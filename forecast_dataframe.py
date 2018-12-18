@@ -123,5 +123,3 @@ Initialise df with pd.date_range as index "))
             plt.savefig(save_path,dpi = dpi)
         
         return(fig,ax)
-    
-  

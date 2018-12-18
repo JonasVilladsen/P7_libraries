@@ -22,7 +22,6 @@ from datetime import datetime
 
 from recurrentshop import RecurrentModel, LSTMCell
 
-
 class SPP_LSTM():
     """
     Class designed creating various LSTM designs to forecast SPP.

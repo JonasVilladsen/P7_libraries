@@ -204,4 +204,3 @@ def clearsky_model_raw(muni_obj,muninr,t_start,t_end, res = "15min",norm = False
             instP = muni_obj.instp[muninr].loc[t]
             cs.loc[t:t+pd.Timedelta(hours = 23,minutes = 45)] *= instP
     return cs
-

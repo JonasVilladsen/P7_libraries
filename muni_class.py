@@ -22,8 +22,8 @@ class muni(SPP):
     coor_list should be a pandas dataframe
     
     """
-    def __init__(self,SPPinfo,muninames,coor_list,instp = None,\
-                 h_freq = "15min",D_freq = "D"):
+    def __init__(self, SPPinfo, muninames, coor_list, instp=None,
+                 h_freq="15min", D_freq="D"):
         SPP.__init__(self,SPPinfo,muninames,instp)
         self.coor = coor_list
 
@@ -44,9 +44,8 @@ def create_muni_class_from_SPP(SPPdat):
             'lat': np.take(coor.KOMMUNE_MAX_lat_X,muni_index,axis = 0),
             'muninr': SPPdat.muninr}
     coor_df = pd.DataFrame(coor).set_index('muninr')
-    return(muni(SPPdat.SPP,SPPdat.muninames,coor_df,SPPdat.instp,SPPdat.h_freq\
-                ,SPPdat.D_freq))
-
+    return(muni(SPPdat.SPP, SPPdat.muninames, coor_df, SPPdat.instp,
+                SPPdat.h_freq, SPPdat.D_freq))
         
 def create_muni_class_from_excel(worksheet):
     nr_munis = 98
@@ -61,9 +60,3 @@ def create_muni_class_from_excel(worksheet):
         instP = worksheet.cell(row = i+2, column=7).value
         M[nr] = municipilaty(nr,name,instP,minkoor,maxkoor)
     return M
-
-# =============================================================================
-# Example
-# =============================================================================
-#M = create_muni_class_from_excel(sheet1)
-# Dictionary indexed my municipilaty number 

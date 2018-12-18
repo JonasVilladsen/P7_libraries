@@ -305,4 +305,3 @@ class qfc: #quick fc class
         self.GHI = GHI
         self.WS = WS
         self.WD = WD
-        

@@ -16,7 +16,6 @@ from utilities import return_to_root,zeropad_hourstring,\
 muni_list_to_grid_list, mk_unique_no_nan_int, _handle_timerange
 import sanity_checks
 
-
 class forecast:
     """
     Structure to hande weatherforecast containing global irridiance, windspeed

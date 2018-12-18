@@ -315,4 +315,3 @@ def rm_dates_from_df(df,dates):
     mask = ~np.in1d(df.index.date, pd.to_datetime(dates).date)
     df = df.loc[mask, :]
     return(df)
-    
